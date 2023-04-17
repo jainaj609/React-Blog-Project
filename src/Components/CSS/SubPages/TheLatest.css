@@ -1,0 +1,131 @@
+.The-Latest-Container {
+    width: 464px;
+    margin: auto;
+}
+
+.The-Latest-Child1 {
+    margin: 0 13px;
+}
+
+header {
+    padding: 20px 100px;
+    background-color: rgb(65, 39, 90);
+    color: rgb(173, 190, 147);
+    text-align: justify;
+}
+
+header h1:last-child {
+    margin: 10px;
+    font-size: large;
+    min-height: 50px;
+    max-height: 65px;
+    overflow: hidden;
+}
+
+.Insta {
+    background-color: rgb(191, 190, 190);
+    font-size: small;
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+    margin-right: 7px;
+}
+
+.Writer-Info-Box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.Writer-Info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Writer-Name {
+    font-size: 18px;
+}
+
+.Date-of-Public {
+    font-size: 14px;
+    color: #A2A2A2;
+}
+
+.claps {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.clap-Count {
+    color: #A2A2A2;
+    font-size: 14px;
+
+}
+
+.The-Latest-Boxx {
+    flex-direction: column;
+    background-color: #FAFAFA;
+    padding: 50px;
+    margin-top: 50px;
+    /* border: 1px solid black; */
+}
+
+.hrline-one {
+    background-color: #F0F0F0;
+    /* border: 1px solid black; */
+}
+
+.The-Latest-Boxes {
+    display: flex;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.Content {
+    width: 371px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.contentLine{
+    font-size: large;
+    padding: 7px 0;
+    min-height: 50px;
+    max-height: 120px;
+    text-align: justify;
+    line-height: 1em;
+    overflow: hidden;
+}
+.position {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    z-index: -1;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap:  50px;
+    text-align: justify;
+    line-height: 1.4em;
+    font-family: serif;
+}
+
+/* .heading1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.the1 {
+    font-size: x-large;
+}
+
+.siren1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-left: 10px;
+} */
