@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { useNavigate, useParams } from "react-router-dom";
 import '../CSS/Bollywood.css'
 import { Store } from '../ContextAPI/ConTextAPI'
-
+import Header from './Header';
 const Bollywood = () => {
   const [dataContext] = useContext(Store);
   const navigate = useNavigate();
@@ -15,11 +15,13 @@ const Bollywood = () => {
       break;
     }
   }
+
   const handleNavigation = (id, item, category) => {// two arg - 1. pathname - 2. state
     navigate(`/${key}/${id}`, { state: { item, category } });
   };
   return (
     <div>
+      <Header/>
       <div className='section'>
 
         <div className='Bollywood'>
@@ -30,11 +32,11 @@ const Bollywood = () => {
               <div className='box-container' key={index}>
                 <div className='box' onClick={() => handleNavigation(item.id, item, category)}>
                   <div>
-                    <img src={item.image.one} alt='item.heading' height={'184px'} width={'308px'} />
+                    <img className='Images-Mobile' src={item.image.one} alt='item.heading' height={'184px'} width={'308px'} />
                   </div>
                   <div className='content'>
                     <h3>{item.heading}</h3>
-                    <p>{item.contentLine}</p>
+                    <p className='contentLine'>{item.contentLine}</p>
                     <p><span className='released_year'>Released :</span> {item.released}</p>
                   </div>
                 </div>
@@ -57,7 +59,7 @@ const Bollywood = () => {
                   <div key={index}>
                     <div className='first-content'>
                       <div>
-                        <img src={dataContext[pageName][0].image.one} alt='' height={'266px'} width={'452px'} />
+                        <img className='TopPost_firstImage' src={dataContext[pageName][0].image.one} alt='' height={'266px'} width={'452px'} />
                       </div>
                       <div className='inline-content'>
                         <h3>{dataContext[pageName][0].heading}</h3>
@@ -71,9 +73,9 @@ const Bollywood = () => {
                     <div className='box-container1' key={index}>
                       <div className='box1'>
                         <div>
-                          <img src={item.image.one} alt='item.heading' height={'104px'} width={'150px'} />
+                          <img className='Images-Mobile' src={item.image.one} alt='item.heading' height={'104px'} width={'150px'} />
                         </div>
-                        <div className='content1'>
+                        <div className='content1 content1-style'>
                           <div className='inline-content1'>
                             <h3>{item.heading}</h3>
                             <h1>{item.id}</h1>

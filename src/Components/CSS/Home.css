@@ -65,7 +65,6 @@
     color: gray;
 }
 
-
 @media screen and (min-width: 375px) and (max-width: 600px) {
 
 
@@ -85,7 +84,31 @@
         margin-left: 12px;
     }
 
+    .Heading-Top-Posts {
+        font-size: 21px;
+        margin-left: 12px;
+    }
+
+    .Heading-Bollywood {
+        font-size: 21px;
+        margin-left: 12px;
+    }
+
+    .Heading-Bollywood::after {
+        width: 3.5em;
+        border-bottom: 2px solid rgb(244, 76, 76);
+        margin-left: 0px;
+    }
+
     .Heading-Latest::after {
+
+        width: 3.5em;
+        border-bottom: 2px solid rgb(244, 76, 76);
+        margin-left: 0px;
+
+    }
+
+    .Heading-Top-Posts::after {
 
         width: 3.5em;
         border-bottom: 2px solid rgb(244, 76, 76);
@@ -113,7 +136,6 @@
         line-height: 1.5em;
         width: 312px;
         box-sizing: border-box;
-
     }
 
     .Content h2 {
@@ -130,5 +152,95 @@
 
     .item-news {
         font-size: 14px;
+    }
+
+    .Advertisement-Box {
+        display: none;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .Images-Mobile {
+        width: 114px;
+        height: 123px;
+    }
+
+    .inline-content1,
+    .inline-content,
+    .content h3 {
+        font-size: 19px;
+        /* width: 114px; */
+    }
+
+    .inline-content1,
+    .inline-content h3 {
+        font-size: 21px;
+    }
+
+    .first-content {
+        width: 312px;
+    }
+
+    .inline-content h1 {
+        display: none;
+    }
+
+    .inline-content1 h1 {
+        display: none;
+    }
+
+    .content1 {
+        height: 123px;
+        /* margin-left: 0; */
+    }
+
+    .content p:first-of-type {
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 16px;
+    }
+
+    .content p:nth-child(3) {
+        font-size: 12px;
+    }
+
+    .content {
+        height: 123px;
+        gap: 0;
+    }
+
+    .box1,
+    .box2 {
+        width: 312px;
+        font-size: 0.5em;
+        margin: auto;
+    }
+
+    .box1 {
+        margin: 50px auto;
+
+    }
+
+    .TopPost_firstImage {
+        width: 312px;
+    }
+
+    p.contentLine {
+        padding: 0;
+        min-height: 34px;
+        max-height: 34px;
+    }
+
+    .box-container1 {
+        width: inherit;
+    }
+
+    .box {
+        gap: 10px
+    }
+    .Home {
+        padding: 0;
     }
 }

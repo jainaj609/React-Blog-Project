@@ -88,18 +88,40 @@
     .hrline-afterlink {
         display: none;
     }
-    .links{
+
+    .links {
         display: none;
     }
+
     .mobile-menu-icon {
         display: block;
     }
-    .Header-Container{
+
+    .Header-Container {
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    .Size{
+
+    .Size {
         font-size: x-large;
+    }
+
+    .Box-shadow {
+        box-shadow:
+            10px 0px 5px 0px #fff,
+            0px 3px 3px 0px #0000001A,
+            -10px 0px 5px 0px #fff,
+            0px -10px 5px 0px #fff;
+    }
+    .Box-shadow{
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+    }
+    .is-sticky{
+        position: sticky;
+        top: 0;
+        background-color: #fff;
     }
 }
